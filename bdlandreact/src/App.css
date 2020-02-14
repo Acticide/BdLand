@@ -1,6 +1,20 @@
-.row {
-  background-color: rgb(145, 111, 133);
-  text-align: center;
+.Formulaire{
+  background-color: rgb(175, 49, 81);
   margin-bottom:10px ;
+ padding-left: 15px;
+  text-align: center;
+}
+ 
+
+
+/* Modifications du Label Titre */
+label {
+  color: rgb(96, 95, 102);
+  background-color: white;
 }
 
+.row {
+  width: 100%;
+  text-align: center;
+
+}

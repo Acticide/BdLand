@@ -10,6 +10,7 @@ bd_description VARCHAR(800) NOT NULL,
 autheur VARCHAR(50) NOT NULL,
 date_post DATETIME NOT NULL,
 contenu NVARCHAR(max) NOT NULL,
+bd_image VARCHAR(50) NOT NULL,
 id_categorie INT NOT NULL,
 FOREIGN KEY (id_categorie) REFERENCES categorie (id)
 )

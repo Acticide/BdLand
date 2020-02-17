@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import { Nav, Navbar, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap'
+import { Nav, Navbar, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import logo from '../';
+
+
+
 
 
 
@@ -10,11 +14,12 @@ export const Formulaire = () => {
 
     return (
         <div>
+                    <img src={logo} />
 
 
             <Form className="Formulaire" >
 
-                <div class="row">
+                <div class="row"> 
                     <input class="form-control" type="text" name="Titre" placeholder = "Titre" />
                     <span class="resultat"></span>
                 </div>

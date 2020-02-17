@@ -1,11 +1,19 @@
 import React from 'react'
 import {Nav,Navbar,Form,FormControl,Button,Dropdown,DropdownButton} from 'react-bootstrap'
 import img1 from './Media/image1.png'
+import {Link} from 'react-router-dom'
+import {Navigation} from 'react-mdl'
+
 export const Head = () => {
     return (
         <div>
         <Navbar bg="dark" variant="dark">  
     <img className ="logo"src={img1}/>
+    <Navigation>
+              <Link to="Favoris">Favoris</Link>
+              <Link to="Formulaire">Ajouter une BD</Link>
+    </Navigation>
+    
     <Nav className="mr-auto">
     </Nav>
     <Form inline>

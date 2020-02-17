@@ -2,10 +2,7 @@ import React, { Component } from 'react'
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Nav, Navbar, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
-import logo from '../';
-
-
-
+import logo from './Media/livre.jpg';
 
 
 
@@ -13,41 +10,40 @@ import logo from '../';
 export const Formulaire = () => {
 
     return (
-        <div>
-                    <img src={logo} />
+        <div class ="contenu">
+   
+
+            <Form className="formulaire" >
 
 
-            <Form className="Formulaire" >
-
-                <div class="row"> 
-                    <input class="form-control" type="text" name="Titre" placeholder = "Titre" />
+                <div class="row">
+                    <input class="form-control" type="text" name="Titre" placeholder="Titre" />
                     <span class="resultat"></span>
                 </div>
 
 
-
-
                 <div class="row">
-                   
-                    <input class="form-control" type="text" name="Auteur"  placeholder = "Auteur" />
+
+                    <input class="form-control" type="text" name="Auteur" placeholder="Auteur" />
                     <span class="resultat"></span>
 
                 </div>
 
 
                 <div class="row">
-                {/* <input class="controle" type="text" name="Description"  placeholder = "Description" /> */}
-                    <textarea class="form-control" rows="2" id="comment" placeholder = "Description" ></textarea>
+                    {/* <input class="controle" type="text" name="Description"  placeholder = "Description" /> */}
+                    <textarea class="form-control" rows="2" id="comment" placeholder="Description" ></textarea>
                     <span class="resultat"></span>
 
                 </div>
 
                 <div class="row">
-                  {/* <label for = "Categorie">Categorie</label> */}
+                    {/* <label for = "Categorie">Categorie</label> */}
+
                     
-
-
                     <DropdownButton className="mr-sm-2" variant="danger"
+                     size="200"
+                    
                         id="dropdown-basic-button" title="Catégorie">
                         <Dropdown.Item href="#/action-1">Western</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Aventure</Dropdown.Item>
@@ -62,9 +58,6 @@ export const Formulaire = () => {
 
                 <div class="row">
 
-                   
-                 
-                    
 
                     <CKEditor
 
@@ -92,7 +85,7 @@ export const Formulaire = () => {
                 <Button variant="success">Creer</Button>
             </Form>
 
-
+  <img src={logo} />
         </div>
     )
 

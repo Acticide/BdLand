@@ -31,14 +31,14 @@ namespace BdAPI.Controllers
         public IActionResult Get()
         {
             DataContext db = new DataContext();
-            return Ok(db.Bd.ToList());
+            return Ok(db.Bd.Include(a => a.Categorie).ToList());
         }
 
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             DataContext db = new DataContext();
-            return Ok(db.Bd.Include(a => a.Categorie).Include(a => a.Bd_image).FirstOrDefault(a => a.Id == id));
+            return Ok(db.Bd.Include(a => a.Categorie).FirstOrDefault(a => a.Id == id));
         }
 
         [HttpPost]
@@ -68,6 +68,23 @@ namespace BdAPI.Controllers
             db.Bd.Add(bd);
             db.SaveChanges();
             return Ok(new { imageId = bd.Id });
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            DataContext db = new DataContext();
+            Bd BdDelete = db.Bd.FirstOrDefault(c => c.Id == id);
+            if (BdDelete != null)
+            {
+                db.Bd.Remove(BdDelete);
+                db.SaveChanges();
+                return Ok(new { message = "deleted" });
+            }
+            else
+            {
+                return NotFound();
+            }
         }
     }
 

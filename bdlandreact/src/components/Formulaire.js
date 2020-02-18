@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import { Nav, Navbar, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import { Form, Button, Dropdown, DropdownButton } from 'react-bootstrap';
 
 
 
 
 
-export const Formulaire = () => {
+export const Formulaire = () => (
 
-    return (
         <div class="contenu">
 
            
@@ -91,4 +90,4 @@ export const Formulaire = () => {
     )
 
 
-}
+export default Formulaire

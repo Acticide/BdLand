@@ -1,0 +1,12 @@
+dans le powershell :
+sqllocaldb c nomDeLinstance
+sqllocaldb s nomDeLinstance
+
+dans visual studio :
+
+Explorateur de serveurs (Ctrl+Alt+S) -> Connexion a la base de donnée (icone en haut)
+
+nom du serveur => (LocalDb)\nomDeLinstance
+
+Appuyer sur Tester la connexion 
+Appuyer sur Ok

@@ -2,6 +2,7 @@ import React from 'react'
 
 export const ConnectionAdmin = () => {
     return (
+        <div className="ConnectionAdin">
         <form class="form-inline">
         <div class="form-group mb-2">
           <label for="staticEmail2" class="sr-only">Email</label>
@@ -13,5 +14,6 @@ export const ConnectionAdmin = () => {
         </div>
         <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
       </form>
+      </div>
     )
 }

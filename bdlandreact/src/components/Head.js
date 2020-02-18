@@ -5,14 +5,17 @@ import {Link} from 'react-router-dom';
 import {Navigation} from 'react-mdl';
 import Router from './router';
 
+
 export const Head = () => {
     return (
-    <div>
-    <Navbar bg="dark" variant="dark">  
+    <div  >
+      
+    <Navbar >  
             <Link to="/"><img className ="logo"src={img1} alt=""/></Link>
       <Navigation>
-                <Link to="Favoris">Favoris</Link>
+                <Link to="Favoris">Favoris</Link> 
                 <Link to="Formulaire">Ajouter une BD</Link>
+                {/* Test  */}
       </Navigation>
       
       <Nav className="mr-auto">
@@ -29,7 +32,7 @@ export const Head = () => {
             <Dropdown.Item href="#/action-7">Fantastique</Dropdown.Item>
         </DropdownButton>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-info">Search</Button>
+          <Button variant="info">Search</Button>
       </Form>
       
     </Navbar>

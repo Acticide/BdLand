@@ -1,5 +1,5 @@
 .formulaire{
-  background-color: rgb(124, 12, 36);
+  /* background-color: rgb(124, 12, 36); */
   margin-bottom:10px ;
  padding-left: 15px;
   text-align: center;
@@ -24,15 +24,12 @@ display: block;
 width: 650px ;
 }
 
-img{
-  width: 35%;
-  
-  
-   
-}
 
-.picture {
-  background-image: ;
+
+.contenu {
+  background-image: url(./components/Media/bibliotheque.jpg); 
+  background-size: cover;
+  background-position: center;
 }
 
 

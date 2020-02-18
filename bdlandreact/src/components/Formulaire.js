@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Nav, Navbar, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
-import logo from './Media/livre.jpg';
-import logo1 from './Media/pageDeLivre.jpg';     //import de l'image de fond du formulaire 
+
 
 
 
@@ -13,9 +12,7 @@ export const Formulaire = () => {
     return (
         <div class="contenu">
 
-            <div class="picture">
-                <img src={logo1} />
-            </div>
+           
 
             <Form className="formulaire" >
 
@@ -89,7 +86,7 @@ export const Formulaire = () => {
                 <Button variant="success">Creer</Button>
             </Form>
 
-            <img src={logo} />
+           
         </div>
     )
 

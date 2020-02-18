@@ -3,16 +3,17 @@ import {Nav,Navbar,Form,FormControl,Button,Dropdown,DropdownButton} from 'react-
 import img1 from './Media/image1.png';
 import {Link} from 'react-router-dom';
 import {Navigation} from 'react-mdl';
-import Router from './Router';
+import Router from './router';
 
 export const Head = () => {
     return (
     <div>
     <Navbar bg="dark" variant="dark">  
-            <Link to="/"></Link><img className ="logo"src={img1} alt=""/>
+            <Link to="/"><img className ="logo"src={img1} alt=""/></Link>
       <Navigation>
                 <Link to="Favoris">Favoris</Link>
                 <Link to="Formulaire">Ajouter une BD</Link>
+                {/* Test  */}
       </Navigation>
       
       <Nav className="mr-auto">

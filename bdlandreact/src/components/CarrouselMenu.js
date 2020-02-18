@@ -46,3 +46,5 @@ export const CarrouselMenu = () => {
     )
 }
 
+export default CarrouselMenu
+

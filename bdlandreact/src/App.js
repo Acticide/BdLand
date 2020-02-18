@@ -9,14 +9,11 @@ function App() {
   return (
     <div>
 
-      <div class="">
+      <div>
         <Head/>
       </div>
 
-      <div class="">
-        <CarrouselMenu/>
-        <CarrouselMenu2/>
-      </div>
+      <Router />
     </div>
 
   );

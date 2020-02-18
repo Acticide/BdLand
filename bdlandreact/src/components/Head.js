@@ -4,12 +4,13 @@ import img1 from './Media/image1.png';
 import {Link} from 'react-router-dom';
 import {Navigation} from 'react-mdl';
 import Router from './router';
+import '../App.css';
 
 export const Head = () => {
     return (
-    <div>
-    <Navbar bg="dark" variant="dark">  
-            <Link to="/"><img className ="logo"src={img1} alt=""/></Link>
+    <div class="menu">
+    <Navbar>  
+            <Link to="Home"><img className ="logo"src={img1} alt=""/></Link>
       <Navigation>
                 <Link to="Favoris">Favoris</Link>
                 <Link to="Formulaire">Ajouter une BD</Link>
@@ -34,7 +35,6 @@ export const Head = () => {
       
     </Navbar>
 
-    <Router />
   </div>
     )
 }

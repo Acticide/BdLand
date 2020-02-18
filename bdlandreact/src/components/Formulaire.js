@@ -3,6 +3,7 @@ import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Nav, Navbar, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
 import logo from './Media/livre.jpg';
+import logo1 from './Media/pageDeLivre.jpg';     //import de l'image de fond du formulaire 
 
 
 
@@ -10,8 +11,11 @@ import logo from './Media/livre.jpg';
 export const Formulaire = () => {
 
     return (
-        <div class ="contenu">
-   
+        <div class="contenu">
+
+            <div class="picture">
+                <img src={logo1} />
+            </div>
 
             <Form className="formulaire" >
 
@@ -40,10 +44,10 @@ export const Formulaire = () => {
                 <div class="row">
                     {/* <label for = "Categorie">Categorie</label> */}
 
-                    
+
                     <DropdownButton className="mr-sm-2" variant="danger"
-                     size="200"
-                    
+                        size="200"
+
                         id="dropdown-basic-button" title="Catégorie">
                         <Dropdown.Item href="#/action-1">Western</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Aventure</Dropdown.Item>
@@ -85,7 +89,7 @@ export const Formulaire = () => {
                 <Button variant="success">Creer</Button>
             </Form>
 
-  <img src={logo} />
+            <img src={logo} />
         </div>
     )
 

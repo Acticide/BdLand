@@ -13,10 +13,7 @@ function App() {
         <Head/>
       </div>
 
-      <div class="">
-        <CarrouselMenu/>
-        <CarrouselMenu2/>
-      </div>
+      <Router />
     </div>
 
   );

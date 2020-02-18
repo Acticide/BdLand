@@ -129,18 +129,6 @@ background-size: cover;
   margin-right: auto;  
 }
 
-.menu {
-background-color: rgb(99, 137, 187);
-}
-
-:any-link {
- /* ciblage du Link header */
-  color: rgb(39, 16, 25);
-  font-weight: bold;
-  font-size: 2.1em;
-}
-
-.mdl-navigation a {
-
- margin-left: 50px;
+.menu{
+  background-color : brown;
 }

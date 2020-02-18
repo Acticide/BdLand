@@ -9,7 +9,7 @@ export const Head = () => {
     return (
     <div>
     <Navbar bg="dark" variant="dark">  
-            <Link to="/"><img className ="logo"src={img1} alt=""/></Link>
+            <Link to="/"></Link><img className ="logo"src={img1} alt=""/>
       <Navigation>
                 <Link to="Favoris">Favoris</Link>
                 <Link to="Formulaire">Ajouter une BD</Link>

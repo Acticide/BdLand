@@ -4,12 +4,12 @@ import img from "./Media/image1.png"
 
 export const CarrouselMenu = () => {
     return (
-        <div>
+        <div className="CarrouselMenu1">
             <Carousel>
   <Carousel.Item>
     <img
       className=""
-      src={img}
+      src=""
       alt=""
     />
     <Carousel.Caption>

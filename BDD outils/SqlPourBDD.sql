@@ -11,8 +11,9 @@ autheur VARCHAR(50) NOT NULL,
 date_post DATETIME NOT NULL,
 contenu NVARCHAR(max) NOT NULL,
 bd_image VARCHAR(50) NOT NULL,
-id_categorie INT NOT NULL,
-FOREIGN KEY (id_categorie) REFERENCES categorie (id)
+categorieId INT NOT NULL,
+FOREIGN KEY (categorieId) REFERENCES categorie (id)
 )
 
 INSERT INTO categorie (categorie_type) VALUES ('action'), ('historique'), ('manga'), ('science-fiction'), ('hantai');
+

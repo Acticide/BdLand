@@ -4,22 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BdLandAPI.Models
+namespace BdAPI.Models
 {
     public class Categorie
     {
         private int id;
-        private string categorieType;
+        private string categorie_type;
 
         public int Id { get => id; set => id = value; }
-        public string CategorieType { get => categorieType; set => categorieType = value; }
+        public string Categorie_type { get => categorie_type; set => categorie_type = value; }
 
         [JsonIgnore]
-        public List<Bd> Annonces { get; set; }
+        public List<Bd> BdList { get; set; }
 
         public Categorie()
         {
-            Annonces = new List<Bd>();
+            BdList = new List<Bd>();
         }
     }
 }

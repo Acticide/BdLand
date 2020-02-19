@@ -136,7 +136,30 @@ background-size: cover;
 :any-link {
   color: rgb(107, 27, 58);
   font-weight: bold;
-  margin-left: 50px;
+  margin-left: 0px;
   font-size: x-large;
  
+}
+
+.mdl-navigation__link {
+  margin-left: 50px;
+}
+
+
+
+
+/* Footer */
+article {
+  background-color: brown;
+  letter-spacing: 3px;
+}
+
+footer {
+  background-color:brown;
+}
+
+
+ol i  {
+  margin-right: 15px;
+  font-size: x-large;
 }

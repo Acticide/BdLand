@@ -1,22 +1,35 @@
 import React from 'react';
 
 
+
+import '../App.css';
+import '../css/fontawesome.css';
+// Test 
+
+
 export const Footer = () => {
     return (
-        <div  >
+        <div>
             <article>
-                <h1> A propos de nous</h1>
+                <h1> Suivez nous sur : </h1>
                 <ol>
-                    <li> Test </li>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-snapchat"></i>
+                    <i class="fab fa-pinterest-square"></i>
 
-                    <li>  Test </li>
-                   
                 </ol>
+
+                <h2>Même si nous n'avons rien de tout cela !! </h2>
+
                 <footer>
                     <p>© 2018 Gandalf , Gimly , Dúnadan  , Elrond</p>
                 </footer>
-                {/* <Link to=""><a href="https://youtu.be/nalLU8i4zgs"><img src="Anneau2.jpg" alt="B.A" border="0"/></a></Link> */}
+
             </article>
+
+
         </div>
     )
 }

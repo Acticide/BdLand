@@ -4,14 +4,14 @@ import img1 from './Media/image1.png';
 import {Link} from 'react-router-dom';
 import {Navigation} from 'react-mdl';
 import Router from './router';
+import '../App.css';
 
 
 export const Head = () => {
     return (
-    <div  >
-      
-    <Navbar >  
-            <Link to="/"><img className ="logo"src={img1} alt=""/></Link>
+    <div class="menu">
+    <Navbar>  
+            <Link to="Home"><a href="https://fontmeme.com/fr/polices-de-bande-dessinee/"><img src="https://fontmeme.com/permalink/200219/5f3620e7bd2136f4346843d9c857aa75.png" alt="polices-de-bande-dessinee" border="0"/></a></Link>
       <Navigation>
                 <Link to="Favoris">Favoris</Link> 
                 <Link to="Formulaire">Ajouter une BD</Link>
@@ -37,7 +37,6 @@ export const Head = () => {
       
     </Navbar>
 
-    <Router />
   </div>
     )
 }

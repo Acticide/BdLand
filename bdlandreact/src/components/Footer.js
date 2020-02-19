@@ -1,4 +1,5 @@
 import React from 'react';
+import { Nav, Navbar, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
 
 
 
@@ -10,6 +11,8 @@ import '../css/fontawesome.css';
 export const Footer = () => {
     return (
         <footer>
+
+            <div class="reseaux">
                 <h1> Suivez nous sur : </h1>
                 <ol>
                     <i class="fab fa-facebook-f"></i>
@@ -26,9 +29,12 @@ export const Footer = () => {
 
                 </ol>
 
-                <h2>Même si nous n'avons rien de tout cela !! </h2>
 
-                <p>© 2018 Gandalf , Gimly , Dúnadan  , Elrond</p>
+                <h2>Même si nous n'avons rien de tout cela !! </h2>
+            </div>
+
+            <p>© 2018 Gandalf , Gimly , Dúnadan  , Elrond</p>
+
         </footer>
     )
 }

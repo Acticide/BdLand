@@ -30,7 +30,7 @@ width: 650px ;
   background-image: url(./components/Media/bibliotheque.jpg); 
   background-size: cover;
   background-position: center;
-  height: 485px;
+  height: 547px;
 }
 
 
@@ -155,6 +155,7 @@ background-size: cover;
   position: relative;
   bottom : 0;
   width : 100%;
+  
 }
 
 footer p{
@@ -166,4 +167,15 @@ footer p{
 ol i  {
   margin-right: 15px;
   font-size: x-large;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+ align-items: flex-end ;
+ justify-content: space-between ;
+}
+
+.reseaux h1 , .reseaux h2 {
+  font-size: 20px;
 }

@@ -9,8 +9,7 @@ import '../css/fontawesome.css';
 
 export const Footer = () => {
     return (
-        <div>
-            <article>
+        <footer>
                 <h1> Suivez nous sur : </h1>
                 <ol>
                     <i class="fab fa-facebook-f"></i>
@@ -23,13 +22,7 @@ export const Footer = () => {
 
                 <h2>Même si nous n'avons rien de tout cela !! </h2>
 
-                <footer>
-                    <p>© 2018 Gandalf , Gimly , Dúnadan  , Elrond</p>
-                </footer>
-
-            </article>
-
-
-        </div>
+                <p>© 2018 Gandalf , Gimly , Dúnadan  , Elrond</p>
+        </footer>
     )
 }

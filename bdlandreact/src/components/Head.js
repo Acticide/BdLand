@@ -11,7 +11,7 @@ export const Head = () => {
     return (
     <div class="menu">
     <Navbar>  
-            <Link to="Home"><img className ="logo"src={img1} alt=""/></Link>
+            <Link to="Home"><a href="https://fontmeme.com/fr/polices-de-bande-dessinee/"><img src="https://fontmeme.com/permalink/200219/5f3620e7bd2136f4346843d9c857aa75.png" alt="polices-de-bande-dessinee" border="0"/></a></Link>
       <Navigation>
                 <Link to="Favoris">Favoris</Link> 
                 <Link to="Formulaire">Ajouter une BD</Link>

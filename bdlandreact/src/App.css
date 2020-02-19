@@ -132,3 +132,11 @@ background-size: cover;
 .menu{
   background-color : brown;
 }
+
+:any-link {
+  color: rgb(107, 27, 58);
+  font-weight: bold;
+  margin-left: 50px;
+  font-size: x-large;
+ 
+}

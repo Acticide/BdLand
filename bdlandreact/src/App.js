@@ -16,11 +16,6 @@ function App() {
 
       <Router />
 
-      <div class="">
-        <CarrouselMenu />
-        <CarrouselMenu2 />
-      </div>
-
       <div class="footer">
         <Footer />
       </div>

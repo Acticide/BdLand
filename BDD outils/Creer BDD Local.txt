@@ -1,12 +1,12 @@
 dans le powershell :
-sqllocaldb c nomDeLinstance
-sqllocaldb s nomDeLinstance
+sqllocaldb c BddBdLand
+sqllocaldb s BddBdLand
 
 dans visual studio :
 
 Explorateur de serveurs (Ctrl+Alt+S) -> Connexion a la base de donnée (icone en haut)
 
-nom du serveur => (LocalDb)\nomDeLinstance
+nom du serveur => (LocalDb)\BddBdLand
 
 Appuyer sur Tester la connexion 
 Appuyer sur Ok

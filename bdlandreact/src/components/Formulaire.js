@@ -54,7 +54,8 @@ export const Formulaire = (props) => {
 
     const renderForm = () => {
         return (
-            <form onSubmit={sendForm}>
+            <form onSubmit={sendForm} class="formAdd">
+                <h1>Ajouter une BD</h1>
                 <div className="row">
                     <input onChange={fieldChange} type="text" placeholder="Titre" className="col form-control m-1" name="titre" />
                 </div>
@@ -69,15 +70,32 @@ export const Formulaire = (props) => {
                 </div>
 
                 <div className="row">
-                    <textarea onChange={fieldChange} className="col form-control m-1" name="contenu" placeholder="Contenu de la BD"></textarea>
-                </div>
+                    <CKEditor
+                        editor={ClassicEditor}
+                        onInit={editor => {
+                            // You can store the "editor" and use when it is needed.
+                            console.log('Editor is ready to use!', editor);
+                        }}
+                        onChange={(event, editor) => {
+                            const data = editor.getData();
+                        }}
+                        onBlur={(event, editor) => {
+                            console.log('Blur.', editor);
+                        }}
+                        onFocus={(event, editor) => {
+                            console.log('Focus.', editor);
+                        }}
 
-                <div clasName="row">
-                    <input type="file" onChange={fieldChange}  className="col form-control m-1" name="bd_image" />
+                        name="contenu"
+                    />
                 </div>
 
                 <div className="row">
-                    <button className="col btn btn-success form-control m-1" type="submit">Valider</button>
+                    <input type="file" onChange={fieldChange} className="file col form-control m-1" name="bd_image" />
+                </div>
+
+                <div className="row">
+                    <button className="col btn form-control m-1" type="submit">Valider</button>
                 </div>
             </form>
         )

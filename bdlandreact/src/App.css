@@ -1,10 +1,26 @@
+/* formulaire */
 .formulaire{
-  /* background-color: rgb(124, 12, 36); */
   margin-bottom:10px ;
  padding-left: 15px;
   text-align: center;
+  
 }
- 
+
+label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+  background-color: cornsilk;
+}
+
+input,
+label {
+  margin: .4rem 0;
+  background-color: rgba(250, 250, 250, 0.842);
+  border-radius: 10px;
+}
+
+
+ /* formulaire  */
 
 .logo{
 width: 150px;
@@ -15,6 +31,7 @@ label {
   color: rgb(0, 0, 0);
   background-color: white;
 }
+/* Modifications du Label Titre */
 
 .row {
   width: 100%;
@@ -176,6 +193,27 @@ footer {
  justify-content: space-between ;
 }
 
+/* Footer  */
+
+
 .reseaux h1 , .reseaux h2 {
   font-size: 20px;
 }
+
+/* Connection Admin  */
+.ConnectionAdmin {
+  background-image: url("./components/Media/lockImage.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: 536px;
+}
+
+.form {
+margin-right: 500px;
+margin-left:500px ;
+padding-bottom: 300px;
+padding-top: 150px;
+text-align: center;
+}
+
+/* Connection Admin  */

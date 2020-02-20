@@ -24,6 +24,15 @@ namespace BdAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                //Definition d'une stratégie pour le cross origin 
+                options.AddPolicy("allowsAll", builder =>
+                {
+                    //builder.WithOrigins("domaine.com", "");
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+                });
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -34,7 +43,8 @@ namespace BdAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
+            app.UseCors();
             app.UseMvc();
         }
     }

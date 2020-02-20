@@ -16,6 +16,7 @@ export const Head = () => {
 
          
           <Link to="Favoris">Favoris</Link>
+          
           <Link to="Formulaire">Ajouter une BD</Link>
           
 

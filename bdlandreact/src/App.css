@@ -57,7 +57,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-.CarrouselMenu2 h1 {
+.CarrouselMenu2 h1, .CarrouselMenu1 h1 {
   font-family: Arial;
   color: red;
   text-align: center;

@@ -3,6 +3,7 @@ import React from 'react'
 export const CarrouselMenu2 = () => {
     return (
         <div className="CarrouselMenu2">
+          
             <h1>Listes BD</h1>
 <div class="wrapper">
   <section id="section1">

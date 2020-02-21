@@ -68,9 +68,17 @@ export const Formulaire = (props) => {
                     </textarea>
                 </div>
 
-                <div className="row">
-                    <textarea onChange={fieldChange} className="col form-control m-1" name="contenu" placeholder="Contenu de la BD"></textarea>
-                </div>
+                <CKEditor
+                    editor={ ClassicEditor }
+                    
+                    onInit={ editor => {
+                        // You can store the "editor" and use when it is needed.
+                        console.log( 'Editor is ready to use!', editor );
+                        }
+                    }
+                    onChange={event}
+                    name = "contenu"
+                />
 
                 <div clasName="row">
                     <input type="file" onChange={fieldChange}  className="col form-control m-1" name="bd_image" />

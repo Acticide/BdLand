@@ -2,16 +2,33 @@
   padding : 0;
 }
 
+.container-fluid {
+  
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 10px;
+  
+}
+
+.BgForm {
+  background-image: url(./components/Media/bibliotheque.jpg); 
+}
+
 /* formulaire */
 
 .formAdd h1{
-  color : brown;
+  color : rgb(255, 255, 255);
   margin-top : 25px;
   margin-bottom : 25px;
+  text-shadow: black 6px 2px;;
+ 
 }
 
 .formAdd .row{
   margin-bottom : 25px;
+
 }
 
 .formAdd .row input, .formAdd .row textarea, .formAdd .row select{
@@ -82,12 +99,6 @@ width: 650px ;
 
 
 
-.contenu {
-  background-image: url(./components/Media/bibliotheque.jpg); 
-  background-size: cover;
-  background-position: center;
-  height: 540px;
-}
 
 
 img{

@@ -102,7 +102,7 @@ export const Formulaire = (props) => {
     }
 
     return (
-        <div className="container">
+        <div className="container-fluid BgForm">
             {renderForm()}
         </div>
     )

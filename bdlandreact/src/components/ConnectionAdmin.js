@@ -1,21 +1,36 @@
 import React from 'react'
 
 export const ConnectionAdmin = () => {
-    return (
-        <div className="ConnectionAdmin">
-        <form class="form-inline">
+  return (
+
+    <div className="ConnectionAdmin">
+
+
+      <form class="form">
+
+
         <div class="form-group mb-2">
           <label for="staticEmail2" class="sr-only">Email</label>
-          <input type="text" readonly class="form-control" id="staticEmail2" placeholder="email@example.com"/>
+          <input type="text" readonly class="form-control" id="staticEmail2" placeholder="email@example.com" /> <br></br>
+
         </div>
+
+
         <div class="form-group mx-sm-3 mb-2">
           <label for="inputPassword2" class="sr-only">Password</label>
-          <input type="password" class="form-control" id="inputPassword2" placeholder="Password"/>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Password" />  <br></br>
         </div>
+
         <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+        
+         
+
       </form>
-      </div>
-    )
+
+
+
+    </div>
+  )
 }
 
 export default ConnectionAdmin;

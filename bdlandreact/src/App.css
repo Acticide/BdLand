@@ -1,10 +1,65 @@
-.formulaire{
-  /* background-color: rgb(124, 12, 36); */
-  margin-bottom:10px ;
- padding-left: 15px;
-  text-align: center;
+.container{
+  padding : 0;
 }
- 
+
+/* formulaire */
+
+.formAdd h1{
+  color : brown;
+  margin-top : 25px;
+  margin-bottom : 25px;
+}
+
+.formAdd .row{
+  margin-bottom : 25px;
+}
+
+.formAdd .row input, .formAdd .row textarea, .formAdd .row select{
+  border : 2px solid brown;
+}
+
+.formAdd .row .file{
+  padding-bottom: 37px;
+}
+
+.formAdd .row button{
+  color : black;
+  background-color : brown;
+  font-weight: bold;
+}
+
+.formAdd .row button:hover{
+  color : white;
+}
+
+.formAdd .row:first-child{
+  margin-top : 25px;
+}
+
+.formAdd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom : 42px;
+}
+
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){
+  border-radius : 5px;
+  border : 2px solid brown;
+}
+
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar, .ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{
+  border-radius : 5px;
+  border : 2px solid brown;
+}
+
+.ck.ck-editor{
+  margin : 4px;
+  width : 100%
+}
+
+
+ /* formulaire  */
 
 .logo{
 width: 150px;
@@ -15,6 +70,7 @@ label {
   color: rgb(0, 0, 0);
   background-color: white;
 }
+/* Modifications du Label Titre */
 
 .row {
   width: 100%;
@@ -30,7 +86,7 @@ width: 650px ;
   background-image: url(./components/Media/bibliotheque.jpg); 
   background-size: cover;
   background-position: center;
-  height: 547px;
+  height: 540px;
 }
 
 
@@ -152,10 +208,8 @@ background-size: cover;
 .footer {
   background-color:brown;
   letter-spacing: 3px;
-  position: relative;
-  bottom : 0;
-  width : 100%;
-  
+  position: relative;  
+  height: 140px;
 }
 
 footer p{
@@ -170,12 +224,36 @@ ol i  {
 }
 
 footer {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  width: 100%;
   display: flex;
   align-items: center;
  align-items: flex-end ;
  justify-content: space-between ;
 }
 
+/* Footer  */
+
+
 .reseaux h1 , .reseaux h2 {
   font-size: 20px;
 }
+
+/* Connection Admin  */
+.ConnectionAdmin {
+  background-image: url("./components/Media/lockImage.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: 536px;
+}
+
+.form {
+margin-right: 500px;
+margin-left:500px ;
+padding-bottom: 300px;
+padding-top: 150px;
+text-align: center;
+}
+
+/* Connection Admin  */

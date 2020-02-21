@@ -28,8 +28,6 @@ export const Footer = () => {
                     <a href="https://twitter.com/login?lang=fr"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.fbi.gov/"><img src= {trump} alt="trump"/> </a>
                 </ol>
-
-
                 <h2>Même si nous n'avons rien de tout cela !! </h2>
             </div>
 

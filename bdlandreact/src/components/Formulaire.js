@@ -78,6 +78,7 @@ export const Formulaire = (props) => {
                         }}
                         onChange={(event, editor) => {
                             const data = editor.getData();
+                            bd.contenu = data;
                         }}
                         onBlur={(event, editor) => {
                             console.log('Blur.', editor);
@@ -102,7 +103,7 @@ export const Formulaire = (props) => {
     }
 
     return (
-        <div className="container-fluid BgForm">
+        <div className="container">
             {renderForm()}
         </div>
     )

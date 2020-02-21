@@ -45,8 +45,10 @@ namespace BdAPI.Controllers
         public IActionResult Post([FromBody] Bd Bd)
         {
             DataContext db = new DataContext();
+
             db.Bd.Add(Bd);
             db.SaveChanges();
+
             return Ok(new { BdId = Bd.Id });
         }
 

@@ -10,9 +10,9 @@ export const postJson = (url, data) => {
     })
 } 
 
-export const putFormData = (url, data) => {
+export const postFormData = (url, data) => {
     return fetch(urlBase + url, {
-        method : 'PUT',
+        method : 'POST',
         headers : {
             "accept" : "application/json"
         },

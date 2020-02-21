@@ -45,7 +45,7 @@ export const Formulaire = (props) => {
         return (
             <div className="row">
                 <select onChange={fieldChange} name="categorieId" className="col form-control m-1">
-                    <option></option>
+                    <option>Catégories</option>
                     {categorie.map((cat, index) => <option key={index} value={cat.id}>{cat.categorie_type}</option>)}
                 </select>
             </div>

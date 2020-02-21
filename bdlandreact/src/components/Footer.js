@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, Form, FormControl, Button, Dropdown, DropdownButton } from 'react-bootstrap';
+import trump from './Media/trump.png';
 
 
 
@@ -15,16 +16,7 @@ export const Footer = () => {
             <div class="reseaux">
                 <h1> Suivez nous sur : </h1>
                 <ol>
-                   
-                    
-                   
-                   
-                  
-                   
-                    
-                   
-                
-                  
+                                     
                     <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.snapchat.com/l/fr-fr/"><i class="fab fa-snapchat"></i></a>
@@ -34,11 +26,8 @@ export const Footer = () => {
                     <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
                     <a href="https://www.twitch.tv/"><i class="fab fa-twitch"></i> </a>
                     <a href="https://twitter.com/login?lang=fr"><i class="fab fa-twitter"></i></a>
-                    
-
+                    <a href="https://www.fbi.gov/"><img src= {trump} alt="trump"/> </a>
                 </ol>
-
-
                 <h2>Même si nous n'avons rien de tout cela !! </h2>
             </div>
 
